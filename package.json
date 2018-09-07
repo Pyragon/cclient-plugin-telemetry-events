@@ -19,7 +19,10 @@
         "subscriptions": {
             "type": "String Array",
             "value": [
-                "logged_in"
+                "logged_in",
+                "logged_out",
+                "token_expiry",
+                "server_restart"
             ],
             "description": "Events to subscribe to. Separate with comma, no spaces."
         }
