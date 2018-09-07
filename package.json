@@ -1,6 +1,6 @@
 {
     "name": "cclient-plugin-telemetry-events",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Plugin for the Cryogen Client to listen for telemetry events from the Cryogen API.",
     "main": "src/main.js",
     "scripts": {
@@ -14,6 +14,15 @@
     "license": "MIT",
     "bugs": {
         "url": "https://github.com/Pyragon/cclient-plugin-telemetry-events/issues"
+    },
+    "defaultConfig": {
+        "subscriptions": {
+            "type": "String Array",
+            "value": [
+                "logged_in"
+            ],
+            "description": "Events to subscribe to. Separate with comma, no spaces."
+        }
     },
     "homepage": "https://github.com/Pyragon/cclient-plugin-telemetry-events#readme"
 }
