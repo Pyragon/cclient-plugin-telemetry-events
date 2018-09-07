@@ -26,7 +26,6 @@ var _telemetry = () => {
                     filtered = defaults.filter(o => this.config.subscriptions.value.includes(o.name));
                 ui.getTelemetry().subscribeToEvents(defaults, (accepted) => {
                     this.accepted = accepted;
-                    console.log(accepted);
                 });
             }
         },
@@ -36,7 +35,7 @@ var _telemetry = () => {
         },
 
         destroy: () => {
-            ui.getTelemetry().unsubscribeFromEvents(accepted);
+            ui.getTelemetry().unsubscribeFromEvents(this.accepted);
         }
 
     };

@@ -1,6 +1,6 @@
 {
     "name": "cclient-plugin-telemetry-events",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Plugin for the Cryogen Client to listen for telemetry events from the Cryogen API.",
     "main": "src/main.js",
     "scripts": {
